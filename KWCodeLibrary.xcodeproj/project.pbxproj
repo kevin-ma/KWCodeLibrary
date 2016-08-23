@@ -1,0 +1,663 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F1345BE1D607F0D0003F196 /* DVTFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1345BA1D607F0D0003F196 /* DVTFoundation.framework */; };
+		8F1345BF1D607F0D0003F196 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1345BB1D607F0D0003F196 /* DVTKit.framework */; };
+		8F1345C01D607F0D0003F196 /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1345BC1D607F0D0003F196 /* IDEFoundation.framework */; };
+		8F1345C11D607F0D0003F196 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1345BD1D607F0D0003F196 /* IDEKit.framework */; };
+		8F1345CE1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1345CD1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m */; };
+		8F1346581D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346571D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */; };
+		8F13465B1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13465A1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m */; };
+		8F13465F1D618CE90003F196 /* KWCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13465E1D618CE90003F196 /* KWCodeModel.m */; };
+		8F1346621D618D160003F196 /* KWCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346611D618D160003F196 /* KWCodeManager.m */; };
+		8F1346661D621DAD0003F196 /* KWCodeLibrarySettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346641D621DAD0003F196 /* KWCodeLibrarySettingController.m */; };
+		8F1346671D621DAD0003F196 /* KWCodeLibrarySettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1346651D621DAD0003F196 /* KWCodeLibrarySettingController.xib */; };
+		8F13466E1D6860120003F196 /* KWCodeLibraryEditCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13466C1D6860120003F196 /* KWCodeLibraryEditCodeController.m */; };
+		8F13466F1D6860120003F196 /* KWCodeLibraryEditCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F13466D1D6860120003F196 /* KWCodeLibraryEditCodeController.xib */; };
+		8F1346761D6A23F20003F196 /* KWDefaultCodeLib.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F1346751D6A23F20003F196 /* KWDefaultCodeLib.plist */; };
+		8F832E081D606504007030B5 /* KWCodeLibrary.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8F832E071D606504007030B5 /* KWCodeLibrary.xcscheme */; };
+		8F832E171D6066A3007030B5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F832E131D6066A3007030B5 /* Info.plist */; };
+		8F832E201D60674B007030B5 /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F832E1F1D60674B007030B5 /* MethodSwizzle.m */; };
+		8F832E301D607133007030B5 /* KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F832E2E1D607133007030B5 /* KWCodeLibrary.m */; };
+		8F948C151D607B0800B39E33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F948C141D607B0800B39E33 /* Foundation.framework */; };
+		8F948C171D607B0E00B39E33 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F948C161D607B0E00B39E33 /* AppKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8F1345BA1D607F0D0003F196 /* DVTFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTFoundation.framework; path = KWCodeLibrary/FrameWorks/DVTFoundation.framework; sourceTree = "<group>"; };
+		8F1345BB1D607F0D0003F196 /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = KWCodeLibrary/FrameWorks/DVTKit.framework; sourceTree = "<group>"; };
+		8F1345BC1D607F0D0003F196 /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = KWCodeLibrary/FrameWorks/IDEFoundation.framework; sourceTree = "<group>"; };
+		8F1345BD1D607F0D0003F196 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = KWCodeLibrary/FrameWorks/IDEKit.framework; sourceTree = "<group>"; };
+		8F1345CC1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibraryIndexCompletionItem.h; sourceTree = "<group>"; };
+		8F1345CD1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibraryIndexCompletionItem.m; sourceTree = "<group>"; };
+		8F1345DB1D60BD410003F196 /* _IDENavigatorOutlineViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _IDENavigatorOutlineViewDataSource.h; sourceTree = "<group>"; };
+		8F1345DC1D60BD410003F196 /* DBGProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGProcess.h; sourceTree = "<group>"; };
+		8F1345DD1D60BD410003F196 /* DBGProcessNavigableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGProcessNavigableItem.h; sourceTree = "<group>"; };
+		8F1345DE1D60BD410003F196 /* DBGVariablesViewContentProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGVariablesViewContentProvider.h; sourceTree = "<group>"; };
+		8F1345DF1D60BD410003F196 /* DVTAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAnnotation.h; sourceTree = "<group>"; };
+		8F1345E01D60BD410003F196 /* DVTAnnotationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAnnotationContext.h; sourceTree = "<group>"; };
+		8F1345E11D60BD410003F196 /* DVTAnnotationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAnnotationManager.h; sourceTree = "<group>"; };
+		8F1345E21D60BD410003F196 /* DVTAnnotationProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTAnnotationProvider.h; sourceTree = "<group>"; };
+		8F1345E31D60BD410003F196 /* DVTCharStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCharStream.h; sourceTree = "<group>"; };
+		8F1345E41D60BD410003F196 /* DVTCompletingTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTCompletingTextView.h; sourceTree = "<group>"; };
+		8F1345E51D60BD410003F196 /* DVTControllerContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTControllerContentView.h; sourceTree = "<group>"; };
+		8F1345E61D60BD410003F196 /* DVTDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDevice.h; sourceTree = "<group>"; };
+		8F1345E71D60BD410003F196 /* DVTDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTDocumentLocation.h; sourceTree = "<group>"; };
+		8F1345E81D60BD410003F196 /* DVTFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFilePath.h; sourceTree = "<group>"; };
+		8F1345E91D60BD410003F196 /* DVTFontAndColorTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTFontAndColorTheme.h; sourceTree = "<group>"; };
+		8F1345EA1D60BD410003F196 /* DVTGradientImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTGradientImageButton.h; sourceTree = "<group>"; };
+		8F1345EB1D60BD410003F196 /* DVTLanguageSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLanguageSpecification.h; sourceTree = "<group>"; };
+		8F1345EC1D60BD410003F196 /* DVTLayoutManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLayoutManager.h; sourceTree = "<group>"; };
+		8F1345ED1D60BD410003F196 /* DVTLayoutView_ML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTLayoutView_ML.h; sourceTree = "<group>"; };
+		8F1345EE1D60BD410003F196 /* DVTMacroDefinitionTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMacroDefinitionTable.h; sourceTree = "<group>"; };
+		8F1345EF1D60BD410003F196 /* DVTMessageBubbleAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTMessageBubbleAnnotation.h; sourceTree = "<group>"; };
+		8F1345F01D60BD410003F196 /* DVTModelObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTModelObject.h; sourceTree = "<group>"; };
+		8F1345F11D60BD410003F196 /* DVTObservingBlockToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObservingBlockToken.h; sourceTree = "<group>"; };
+		8F1345F21D60BD410003F196 /* DVTObservingToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTObservingToken.h; sourceTree = "<group>"; };
+		8F1345F31D60BD410003F196 /* DVTOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTOperation.h; sourceTree = "<group>"; };
+		8F1345F41D60BD410003F196 /* DVTSourceCodeLanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceCodeLanguage.h; sourceTree = "<group>"; };
+		8F1345F51D60BD410003F196 /* DVTSourceCodeSymbolKind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceCodeSymbolKind.h; sourceTree = "<group>"; };
+		8F1345F61D60BD410003F196 /* DVTSourceModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModel.h; sourceTree = "<group>"; };
+		8F1345F71D60BD410003F196 /* DVTSourceModelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceModelItem.h; sourceTree = "<group>"; };
+		8F1345F81D60BD410003F196 /* DVTSourceScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceScanner.h; sourceTree = "<group>"; };
+		8F1345F91D60BD410003F196 /* DVTSourceSpecification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceSpecification.h; sourceTree = "<group>"; };
+		8F1345FA1D60BD410003F196 /* DVTSourceTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTSourceTextView.h; sourceTree = "<group>"; };
+		8F1345FB1D60BD410003F196 /* DVTTextAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextAnnotation.h; sourceTree = "<group>"; };
+		8F1345FC1D60BD410003F196 /* DVTTextAnnotationTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextAnnotationTheme.h; sourceTree = "<group>"; };
+		8F1345FD1D60BD410003F196 /* DVTTextCompletionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextCompletionController.h; sourceTree = "<group>"; };
+		8F1345FE1D60BD410003F196 /* DVTTextCompletionDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextCompletionDataSource.h; sourceTree = "<group>"; };
+		8F1345FF1D60BD410003F196 /* DVTTextCompletionInlinePreviewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextCompletionInlinePreviewController.h; sourceTree = "<group>"; };
+		8F1346001D60BD410003F196 /* DVTTextCompletionListWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextCompletionListWindowController.h; sourceTree = "<group>"; };
+		8F1346011D60BD410003F196 /* DVTTextCompletionSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextCompletionSession.h; sourceTree = "<group>"; };
+		8F1346021D60BD410003F196 /* DVTTextCompletionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextCompletionStrategy.h; sourceTree = "<group>"; };
+		8F1346031D60BD410003F196 /* DVTTextDocumentLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextDocumentLocation.h; sourceTree = "<group>"; };
+		8F1346041D60BD410003F196 /* DVTTextSidebarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextSidebarView.h; sourceTree = "<group>"; };
+		8F1346051D60BD410003F196 /* DVTTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextStorage.h; sourceTree = "<group>"; };
+		8F1346061D60BD410003F196 /* DVTTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTTextView.h; sourceTree = "<group>"; };
+		8F1346071D60BD410003F196 /* DVTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DVTViewController.h; sourceTree = "<group>"; };
+		8F1346081D60BD410003F196 /* IDEAnnotationContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEAnnotationContext.h; sourceTree = "<group>"; };
+		8F1346091D60BD410003F196 /* IDEBuildIssueAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEBuildIssueAnnotation.h; sourceTree = "<group>"; };
+		8F13460A1D60BD410003F196 /* IDEBuildIssueProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEBuildIssueProvider.h; sourceTree = "<group>"; };
+		8F13460B1D60BD410003F196 /* IDEBuildIssueStaticAnalyzerWarningAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEBuildIssueStaticAnalyzerWarningAnnotation.h; sourceTree = "<group>"; };
+		8F13460C1D60BD410003F196 /* IDEBuildIssueWarningAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEBuildIssueWarningAnnotation.h; sourceTree = "<group>"; };
+		8F13460D1D60BD410003F196 /* IDEConsoleAdaptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEConsoleAdaptor.h; sourceTree = "<group>"; };
+		8F13460E1D60BD410003F196 /* IDEContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEContainer.h; sourceTree = "<group>"; };
+		8F13460F1D60BD410003F196 /* IDEDataValue-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEDataValue-Protocol.h"; sourceTree = "<group>"; };
+		8F1346101D60BD410003F196 /* IDEDocumentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEDocumentController.h; sourceTree = "<group>"; };
+		8F1346111D60BD410003F196 /* IDEEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditor.h; sourceTree = "<group>"; };
+		8F1346121D60BD410003F196 /* IDEEditorArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditorArea.h; sourceTree = "<group>"; };
+		8F1346131D60BD410003F196 /* IDEEditorContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditorContext.h; sourceTree = "<group>"; };
+		8F1346141D60BD410003F196 /* IDEEditorDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEEditorDocument.h; sourceTree = "<group>"; };
+		8F1346151D60BD410003F196 /* IDEExecutionEnvironment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEExecutionEnvironment.h; sourceTree = "<group>"; };
+		8F1346161D60BD410003F196 /* IDEFileNavigableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEFileNavigableItem.h; sourceTree = "<group>"; };
+		8F1346171D60BD410003F196 /* IDEFileReferenceNavigableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEFileReferenceNavigableItem.h; sourceTree = "<group>"; };
+		8F1346181D60BD410003F196 /* IDEFrameworkFilePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEFrameworkFilePath.h; sourceTree = "<group>"; };
+		8F1346191D60BD410003F196 /* IDEIndex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndex.h; sourceTree = "<group>"; };
+		8F13461A1D60BD410003F196 /* IDEIndexCallableSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexCallableSymbol.h; sourceTree = "<group>"; };
+		8F13461B1D60BD410003F196 /* IDEIndexCategorySymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexCategorySymbol.h; sourceTree = "<group>"; };
+		8F13461C1D60BD410003F196 /* IDEIndexClassSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexClassSymbol.h; sourceTree = "<group>"; };
+		8F13461D1D60BD410003F196 /* IDEIndexCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexCollection.h; sourceTree = "<group>"; };
+		8F13461E1D60BD410003F196 /* IDEIndexCompletionArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexCompletionArray.h; sourceTree = "<group>"; };
+		8F13461F1D60BD410003F196 /* IDEIndexCompletionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexCompletionItem.h; sourceTree = "<group>"; };
+		8F1346201D60BD410003F196 /* IDEIndexCompletionStrategy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexCompletionStrategy.h; sourceTree = "<group>"; };
+		8F1346211D60BD410003F196 /* IDEIndexContainerSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexContainerSymbol.h; sourceTree = "<group>"; };
+		8F1346221D60BD410003F196 /* IDEIndexDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexDatabase.h; sourceTree = "<group>"; };
+		8F1346231D60BD410003F196 /* IDEIndexDBConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexDBConnection.h; sourceTree = "<group>"; };
+		8F1346241D60BD410003F196 /* IDEIndexDBSQLStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexDBSQLStream.h; sourceTree = "<group>"; };
+		8F1346251D60BD410003F196 /* IDEIndexFileCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexFileCollection.h; sourceTree = "<group>"; };
+		8F1346261D60BD410003F196 /* IDEIndexNewSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexNewSymbol.h; sourceTree = "<group>"; };
+		8F1346271D60BD410003F196 /* IDEIndexSymbol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexSymbol.h; sourceTree = "<group>"; };
+		8F1346281D60BD410003F196 /* IDEIndexSymbolCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexSymbolCollection.h; sourceTree = "<group>"; };
+		8F1346291D60BD410003F196 /* IDEIndexSymbolOccurrence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexSymbolOccurrence.h; sourceTree = "<group>"; };
+		8F13462A1D60BD410003F196 /* IDEIndexSymbolOccurrenceCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexSymbolOccurrenceCollection.h; sourceTree = "<group>"; };
+		8F13462B1D60BD410003F196 /* IDEIndexSymbolWithOccurrenceCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIndexSymbolWithOccurrenceCollection.h; sourceTree = "<group>"; };
+		8F13462C1D60BD410003F196 /* IDEIssue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIssue.h; sourceTree = "<group>"; };
+		8F13462D1D60BD410003F196 /* IDEIssueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIssueManager.h; sourceTree = "<group>"; };
+		8F13462E1D60BD410003F196 /* IDEIssueProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEIssueProvider.h; sourceTree = "<group>"; };
+		8F13462F1D60BD410003F196 /* IDEKeyDrivenNavigableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEKeyDrivenNavigableItem.h; sourceTree = "<group>"; };
+		8F1346301D60BD410003F196 /* IDEKeyDrivenNavigableItemRepresentedObject-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEKeyDrivenNavigableItemRepresentedObject-Protocol.h"; sourceTree = "<group>"; };
+		8F1346311D60BD410003F196 /* IDELaunchSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDELaunchSession.h; sourceTree = "<group>"; };
+		8F1346321D60BD410003F196 /* IDENavigableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDENavigableItem.h; sourceTree = "<group>"; };
+		8F1346331D60BD410003F196 /* IDENavigator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDENavigator.h; sourceTree = "<group>"; };
+		8F1346341D60BD410003F196 /* IDENavigatorOutlineView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDENavigatorOutlineView.h; sourceTree = "<group>"; };
+		8F1346351D60BD410003F196 /* IDENavigatorOutlineViewDelegate-Protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDENavigatorOutlineViewDelegate-Protocol.h"; sourceTree = "<group>"; };
+		8F1346361D60BD410003F196 /* IDEPathControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEPathControl.h; sourceTree = "<group>"; };
+		8F1346371D60BD410003F196 /* IDERunDestination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDERunDestination.h; sourceTree = "<group>"; };
+		8F1346381D60BD410003F196 /* IDERunOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDERunOperation.h; sourceTree = "<group>"; };
+		8F1346391D60BD410003F196 /* IDERunOperationWorker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDERunOperationWorker.h; sourceTree = "<group>"; };
+		8F13463A1D60BD410003F196 /* IDESourceCodeEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDESourceCodeEditor.h; sourceTree = "<group>"; };
+		8F13463B1D60BD410003F196 /* IDEStackFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEStackFrame.h; sourceTree = "<group>"; };
+		8F13463C1D60BD410003F196 /* IDEThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEThread.h; sourceTree = "<group>"; };
+		8F13463D1D60BD410003F196 /* IDEVariablesView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEVariablesView.h; sourceTree = "<group>"; };
+		8F13463E1D60BD410003F196 /* IDEVariablesViewNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEVariablesViewNode.h; sourceTree = "<group>"; };
+		8F13463F1D60BD410003F196 /* IDEViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEViewController.h; sourceTree = "<group>"; };
+		8F1346401D60BD410003F196 /* IDEWorkspace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEWorkspace.h; sourceTree = "<group>"; };
+		8F1346411D60BD410003F196 /* IDEWorkspaceArena.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEWorkspaceArena.h; sourceTree = "<group>"; };
+		8F1346421D60BD410003F196 /* IDEWorkspaceArenaInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEWorkspaceArenaInfo.h; sourceTree = "<group>"; };
+		8F1346431D60BD410003F196 /* IDEWorkspaceSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEWorkspaceSettings.h; sourceTree = "<group>"; };
+		8F1346441D60BD410003F196 /* IDEWorkspaceTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEWorkspaceTabController.h; sourceTree = "<group>"; };
+		8F1346451D60BD410003F196 /* IDEXMLPackageContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDEXMLPackageContainer.h; sourceTree = "<group>"; };
+		8F1346461D60BD410003F196 /* PBXBuildContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXBuildContext.h; sourceTree = "<group>"; };
+		8F1346471D60BD410003F196 /* PBXBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXBuildPhase.h; sourceTree = "<group>"; };
+		8F1346481D60BD410003F196 /* PBXBuildStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXBuildStyle.h; sourceTree = "<group>"; };
+		8F1346491D60BD410003F196 /* PBXContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXContainer.h; sourceTree = "<group>"; };
+		8F13464A1D60BD410003F196 /* PBXContainerItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXContainerItem.h; sourceTree = "<group>"; };
+		8F13464B1D60BD410003F196 /* PBXFileReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXFileReference.h; sourceTree = "<group>"; };
+		8F13464C1D60BD410003F196 /* PBXFrameworksBuildPhase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXFrameworksBuildPhase.h; sourceTree = "<group>"; };
+		8F13464D1D60BD410003F196 /* PBXObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXObject.h; sourceTree = "<group>"; };
+		8F13464E1D60BD410003F196 /* PBXProject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXProject.h; sourceTree = "<group>"; };
+		8F13464F1D60BD410003F196 /* PBXProjectItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXProjectItem.h; sourceTree = "<group>"; };
+		8F1346501D60BD410003F196 /* PBXReference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXReference.h; sourceTree = "<group>"; };
+		8F1346511D60BD410003F196 /* PBXTarget.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXTarget.h; sourceTree = "<group>"; };
+		8F1346521D60BD410003F196 /* PBXTargetBuildContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PBXTargetBuildContext.h; sourceTree = "<group>"; };
+		8F1346531D60BD410003F196 /* XCBuildConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildConfiguration.h; sourceTree = "<group>"; };
+		8F1346541D60BD410003F196 /* XCConfigurationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCConfigurationList.h; sourceTree = "<group>"; };
+		8F1346551D60BD410003F196 /* XCEditFileEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCEditFileEditor.h; sourceTree = "<group>"; };
+		8F1346561D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEIndexCompletionStrategy+KWCodeLibrary.h"; sourceTree = "<group>"; };
+		8F1346571D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEIndexCompletionStrategy+KWCodeLibrary.m"; sourceTree = "<group>"; };
+		8F1346591D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEWorkspace+KWCodeLibrary.h"; sourceTree = "<group>"; };
+		8F13465A1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEWorkspace+KWCodeLibrary.m"; sourceTree = "<group>"; };
+		8F13465D1D618CE90003F196 /* KWCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeModel.h; sourceTree = "<group>"; };
+		8F13465E1D618CE90003F196 /* KWCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeModel.m; sourceTree = "<group>"; };
+		8F1346601D618D160003F196 /* KWCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeManager.h; sourceTree = "<group>"; };
+		8F1346611D618D160003F196 /* KWCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeManager.m; sourceTree = "<group>"; };
+		8F1346631D621DAD0003F196 /* KWCodeLibrarySettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibrarySettingController.h; sourceTree = "<group>"; };
+		8F1346641D621DAD0003F196 /* KWCodeLibrarySettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibrarySettingController.m; sourceTree = "<group>"; };
+		8F1346651D621DAD0003F196 /* KWCodeLibrarySettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KWCodeLibrarySettingController.xib; sourceTree = "<group>"; };
+		8F13466B1D6860120003F196 /* KWCodeLibraryEditCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibraryEditCodeController.h; sourceTree = "<group>"; };
+		8F13466C1D6860120003F196 /* KWCodeLibraryEditCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibraryEditCodeController.m; sourceTree = "<group>"; };
+		8F13466D1D6860120003F196 /* KWCodeLibraryEditCodeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KWCodeLibraryEditCodeController.xib; sourceTree = "<group>"; };
+		8F1346751D6A23F20003F196 /* KWDefaultCodeLib.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KWDefaultCodeLib.plist; sourceTree = "<group>"; };
+		8F832E031D606504007030B5 /* KWCodeLibrary.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KWCodeLibrary.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F832E071D606504007030B5 /* KWCodeLibrary.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = KWCodeLibrary.xcscheme; path = KWCodeLibrary.xcodeproj/xcshareddata/xcschemes/KWCodeLibrary.xcscheme; sourceTree = SOURCE_ROOT; };
+		8F832E131D6066A3007030B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F832E1E1D60674B007030B5 /* MethodSwizzle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MethodSwizzle.h; sourceTree = "<group>"; };
+		8F832E1F1D60674B007030B5 /* MethodSwizzle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MethodSwizzle.m; sourceTree = "<group>"; };
+		8F832E2D1D607133007030B5 /* KWCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibrary.h; sourceTree = "<group>"; };
+		8F832E2E1D607133007030B5 /* KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibrary.m; sourceTree = "<group>"; };
+		8F948C141D607B0800B39E33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8F948C161D607B0E00B39E33 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F832E311D607245007030B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1345BE1D607F0D0003F196 /* DVTFoundation.framework in Frameworks */,
+				8F1345BF1D607F0D0003F196 /* DVTKit.framework in Frameworks */,
+				8F1345C01D607F0D0003F196 /* IDEFoundation.framework in Frameworks */,
+				8F1345C11D607F0D0003F196 /* IDEKit.framework in Frameworks */,
+				8F948C171D607B0E00B39E33 /* AppKit.framework in Frameworks */,
+				8F948C151D607B0800B39E33 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F1345DA1D60BD410003F196 /* XCHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				8F1345DB1D60BD410003F196 /* _IDENavigatorOutlineViewDataSource.h */,
+				8F1345DC1D60BD410003F196 /* DBGProcess.h */,
+				8F1345DD1D60BD410003F196 /* DBGProcessNavigableItem.h */,
+				8F1345DE1D60BD410003F196 /* DBGVariablesViewContentProvider.h */,
+				8F1345DF1D60BD410003F196 /* DVTAnnotation.h */,
+				8F1345E01D60BD410003F196 /* DVTAnnotationContext.h */,
+				8F1345E11D60BD410003F196 /* DVTAnnotationManager.h */,
+				8F1345E21D60BD410003F196 /* DVTAnnotationProvider.h */,
+				8F1345E31D60BD410003F196 /* DVTCharStream.h */,
+				8F1345E41D60BD410003F196 /* DVTCompletingTextView.h */,
+				8F1345E51D60BD410003F196 /* DVTControllerContentView.h */,
+				8F1345E61D60BD410003F196 /* DVTDevice.h */,
+				8F1345E71D60BD410003F196 /* DVTDocumentLocation.h */,
+				8F1345E81D60BD410003F196 /* DVTFilePath.h */,
+				8F1345E91D60BD410003F196 /* DVTFontAndColorTheme.h */,
+				8F1345EA1D60BD410003F196 /* DVTGradientImageButton.h */,
+				8F1345EB1D60BD410003F196 /* DVTLanguageSpecification.h */,
+				8F1345EC1D60BD410003F196 /* DVTLayoutManager.h */,
+				8F1345ED1D60BD410003F196 /* DVTLayoutView_ML.h */,
+				8F1345EE1D60BD410003F196 /* DVTMacroDefinitionTable.h */,
+				8F1345EF1D60BD410003F196 /* DVTMessageBubbleAnnotation.h */,
+				8F1345F01D60BD410003F196 /* DVTModelObject.h */,
+				8F1345F11D60BD410003F196 /* DVTObservingBlockToken.h */,
+				8F1345F21D60BD410003F196 /* DVTObservingToken.h */,
+				8F1345F31D60BD410003F196 /* DVTOperation.h */,
+				8F1345F41D60BD410003F196 /* DVTSourceCodeLanguage.h */,
+				8F1345F51D60BD410003F196 /* DVTSourceCodeSymbolKind.h */,
+				8F1345F61D60BD410003F196 /* DVTSourceModel.h */,
+				8F1345F71D60BD410003F196 /* DVTSourceModelItem.h */,
+				8F1345F81D60BD410003F196 /* DVTSourceScanner.h */,
+				8F1345F91D60BD410003F196 /* DVTSourceSpecification.h */,
+				8F1345FA1D60BD410003F196 /* DVTSourceTextView.h */,
+				8F1345FB1D60BD410003F196 /* DVTTextAnnotation.h */,
+				8F1345FC1D60BD410003F196 /* DVTTextAnnotationTheme.h */,
+				8F1345FD1D60BD410003F196 /* DVTTextCompletionController.h */,
+				8F1345FE1D60BD410003F196 /* DVTTextCompletionDataSource.h */,
+				8F1345FF1D60BD410003F196 /* DVTTextCompletionInlinePreviewController.h */,
+				8F1346001D60BD410003F196 /* DVTTextCompletionListWindowController.h */,
+				8F1346011D60BD410003F196 /* DVTTextCompletionSession.h */,
+				8F1346021D60BD410003F196 /* DVTTextCompletionStrategy.h */,
+				8F1346031D60BD410003F196 /* DVTTextDocumentLocation.h */,
+				8F1346041D60BD410003F196 /* DVTTextSidebarView.h */,
+				8F1346051D60BD410003F196 /* DVTTextStorage.h */,
+				8F1346061D60BD410003F196 /* DVTTextView.h */,
+				8F1346071D60BD410003F196 /* DVTViewController.h */,
+				8F1346081D60BD410003F196 /* IDEAnnotationContext.h */,
+				8F1346091D60BD410003F196 /* IDEBuildIssueAnnotation.h */,
+				8F13460A1D60BD410003F196 /* IDEBuildIssueProvider.h */,
+				8F13460B1D60BD410003F196 /* IDEBuildIssueStaticAnalyzerWarningAnnotation.h */,
+				8F13460C1D60BD410003F196 /* IDEBuildIssueWarningAnnotation.h */,
+				8F13460D1D60BD410003F196 /* IDEConsoleAdaptor.h */,
+				8F13460E1D60BD410003F196 /* IDEContainer.h */,
+				8F13460F1D60BD410003F196 /* IDEDataValue-Protocol.h */,
+				8F1346101D60BD410003F196 /* IDEDocumentController.h */,
+				8F1346111D60BD410003F196 /* IDEEditor.h */,
+				8F1346121D60BD410003F196 /* IDEEditorArea.h */,
+				8F1346131D60BD410003F196 /* IDEEditorContext.h */,
+				8F1346141D60BD410003F196 /* IDEEditorDocument.h */,
+				8F1346151D60BD410003F196 /* IDEExecutionEnvironment.h */,
+				8F1346161D60BD410003F196 /* IDEFileNavigableItem.h */,
+				8F1346171D60BD410003F196 /* IDEFileReferenceNavigableItem.h */,
+				8F1346181D60BD410003F196 /* IDEFrameworkFilePath.h */,
+				8F1346191D60BD410003F196 /* IDEIndex.h */,
+				8F13461A1D60BD410003F196 /* IDEIndexCallableSymbol.h */,
+				8F13461B1D60BD410003F196 /* IDEIndexCategorySymbol.h */,
+				8F13461C1D60BD410003F196 /* IDEIndexClassSymbol.h */,
+				8F13461D1D60BD410003F196 /* IDEIndexCollection.h */,
+				8F13461E1D60BD410003F196 /* IDEIndexCompletionArray.h */,
+				8F13461F1D60BD410003F196 /* IDEIndexCompletionItem.h */,
+				8F1346201D60BD410003F196 /* IDEIndexCompletionStrategy.h */,
+				8F1346211D60BD410003F196 /* IDEIndexContainerSymbol.h */,
+				8F1346221D60BD410003F196 /* IDEIndexDatabase.h */,
+				8F1346231D60BD410003F196 /* IDEIndexDBConnection.h */,
+				8F1346241D60BD410003F196 /* IDEIndexDBSQLStream.h */,
+				8F1346251D60BD410003F196 /* IDEIndexFileCollection.h */,
+				8F1346261D60BD410003F196 /* IDEIndexNewSymbol.h */,
+				8F1346271D60BD410003F196 /* IDEIndexSymbol.h */,
+				8F1346281D60BD410003F196 /* IDEIndexSymbolCollection.h */,
+				8F1346291D60BD410003F196 /* IDEIndexSymbolOccurrence.h */,
+				8F13462A1D60BD410003F196 /* IDEIndexSymbolOccurrenceCollection.h */,
+				8F13462B1D60BD410003F196 /* IDEIndexSymbolWithOccurrenceCollection.h */,
+				8F13462C1D60BD410003F196 /* IDEIssue.h */,
+				8F13462D1D60BD410003F196 /* IDEIssueManager.h */,
+				8F13462E1D60BD410003F196 /* IDEIssueProvider.h */,
+				8F13462F1D60BD410003F196 /* IDEKeyDrivenNavigableItem.h */,
+				8F1346301D60BD410003F196 /* IDEKeyDrivenNavigableItemRepresentedObject-Protocol.h */,
+				8F1346311D60BD410003F196 /* IDELaunchSession.h */,
+				8F1346321D60BD410003F196 /* IDENavigableItem.h */,
+				8F1346331D60BD410003F196 /* IDENavigator.h */,
+				8F1346341D60BD410003F196 /* IDENavigatorOutlineView.h */,
+				8F1346351D60BD410003F196 /* IDENavigatorOutlineViewDelegate-Protocol.h */,
+				8F1346361D60BD410003F196 /* IDEPathControl.h */,
+				8F1346371D60BD410003F196 /* IDERunDestination.h */,
+				8F1346381D60BD410003F196 /* IDERunOperation.h */,
+				8F1346391D60BD410003F196 /* IDERunOperationWorker.h */,
+				8F13463A1D60BD410003F196 /* IDESourceCodeEditor.h */,
+				8F13463B1D60BD410003F196 /* IDEStackFrame.h */,
+				8F13463C1D60BD410003F196 /* IDEThread.h */,
+				8F13463D1D60BD410003F196 /* IDEVariablesView.h */,
+				8F13463E1D60BD410003F196 /* IDEVariablesViewNode.h */,
+				8F13463F1D60BD410003F196 /* IDEViewController.h */,
+				8F1346401D60BD410003F196 /* IDEWorkspace.h */,
+				8F1346411D60BD410003F196 /* IDEWorkspaceArena.h */,
+				8F1346421D60BD410003F196 /* IDEWorkspaceArenaInfo.h */,
+				8F1346431D60BD410003F196 /* IDEWorkspaceSettings.h */,
+				8F1346441D60BD410003F196 /* IDEWorkspaceTabController.h */,
+				8F1346451D60BD410003F196 /* IDEXMLPackageContainer.h */,
+				8F1346461D60BD410003F196 /* PBXBuildContext.h */,
+				8F1346471D60BD410003F196 /* PBXBuildPhase.h */,
+				8F1346481D60BD410003F196 /* PBXBuildStyle.h */,
+				8F1346491D60BD410003F196 /* PBXContainer.h */,
+				8F13464A1D60BD410003F196 /* PBXContainerItem.h */,
+				8F13464B1D60BD410003F196 /* PBXFileReference.h */,
+				8F13464C1D60BD410003F196 /* PBXFrameworksBuildPhase.h */,
+				8F13464D1D60BD410003F196 /* PBXObject.h */,
+				8F13464E1D60BD410003F196 /* PBXProject.h */,
+				8F13464F1D60BD410003F196 /* PBXProjectItem.h */,
+				8F1346501D60BD410003F196 /* PBXReference.h */,
+				8F1346511D60BD410003F196 /* PBXTarget.h */,
+				8F1346521D60BD410003F196 /* PBXTargetBuildContext.h */,
+				8F1346531D60BD410003F196 /* XCBuildConfiguration.h */,
+				8F1346541D60BD410003F196 /* XCConfigurationList.h */,
+				8F1346551D60BD410003F196 /* XCEditFileEditor.h */,
+			);
+			path = XCHeaders;
+			sourceTree = "<group>";
+		};
+		8F13465C1D618C930003F196 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F13465D1D618CE90003F196 /* KWCodeModel.h */,
+				8F13465E1D618CE90003F196 /* KWCodeModel.m */,
+				8F1346601D618D160003F196 /* KWCodeManager.h */,
+				8F1346611D618D160003F196 /* KWCodeManager.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F832DFB1D606504007030B5 = {
+			isa = PBXGroup;
+			children = (
+				8F832E051D606504007030B5 /* KWCodeLibrary */,
+				8F948C0F1D607A9700B39E33 /* FrameWorks */,
+				8F832E041D606504007030B5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8F832E041D606504007030B5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F832E031D606504007030B5 /* KWCodeLibrary.xcplugin */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F832E051D606504007030B5 /* KWCodeLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				8F13465C1D618C930003F196 /* Model */,
+				8F832E191D6066AA007030B5 /* Action */,
+				8F832E1A1D6066AA007030B5 /* Setting */,
+				8F832E121D6066A3007030B5 /* Main */,
+				8F832E061D606504007030B5 /* Supporting Files */,
+			);
+			path = KWCodeLibrary;
+			sourceTree = "<group>";
+		};
+		8F832E061D606504007030B5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F832E071D606504007030B5 /* KWCodeLibrary.xcscheme */,
+				8F1346751D6A23F20003F196 /* KWDefaultCodeLib.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8F832E121D6066A3007030B5 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8F1345DA1D60BD410003F196 /* XCHeaders */,
+				8F832E1E1D60674B007030B5 /* MethodSwizzle.h */,
+				8F832E1F1D60674B007030B5 /* MethodSwizzle.m */,
+				8F832E131D6066A3007030B5 /* Info.plist */,
+				8F832E2D1D607133007030B5 /* KWCodeLibrary.h */,
+				8F832E2E1D607133007030B5 /* KWCodeLibrary.m */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8F832E191D6066AA007030B5 /* Action */ = {
+			isa = PBXGroup;
+			children = (
+				8F1346561D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.h */,
+				8F1346571D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */,
+				8F1346591D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.h */,
+				8F13465A1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m */,
+				8F1345CC1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.h */,
+				8F1345CD1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m */,
+			);
+			path = Action;
+			sourceTree = "<group>";
+		};
+		8F832E1A1D6066AA007030B5 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				8F1346631D621DAD0003F196 /* KWCodeLibrarySettingController.h */,
+				8F1346641D621DAD0003F196 /* KWCodeLibrarySettingController.m */,
+				8F1346651D621DAD0003F196 /* KWCodeLibrarySettingController.xib */,
+				8F13466B1D6860120003F196 /* KWCodeLibraryEditCodeController.h */,
+				8F13466C1D6860120003F196 /* KWCodeLibraryEditCodeController.m */,
+				8F13466D1D6860120003F196 /* KWCodeLibraryEditCodeController.xib */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		8F948C0F1D607A9700B39E33 /* FrameWorks */ = {
+			isa = PBXGroup;
+			children = (
+				8F1345BA1D607F0D0003F196 /* DVTFoundation.framework */,
+				8F1345BB1D607F0D0003F196 /* DVTKit.framework */,
+				8F1345BC1D607F0D0003F196 /* IDEFoundation.framework */,
+				8F1345BD1D607F0D0003F196 /* IDEKit.framework */,
+				8F948C161D607B0E00B39E33 /* AppKit.framework */,
+				8F948C141D607B0800B39E33 /* Foundation.framework */,
+			);
+			name = FrameWorks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F832E021D606504007030B5 /* KWCodeLibrary */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F832E0F1D606504007030B5 /* Build configuration list for PBXNativeTarget "KWCodeLibrary" */;
+			buildPhases = (
+				8F832E001D606504007030B5 /* Sources */,
+				8F832E011D606504007030B5 /* Resources */,
+				8F832E311D607245007030B5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KWCodeLibrary;
+			productName = KWCodeLibrary;
+			productReference = 8F832E031D606504007030B5 /* KWCodeLibrary.xcplugin */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F832DFC1D606504007030B5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "kevin-meili-inc";
+				TargetAttributes = {
+					8F832E021D606504007030B5 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 8F832DFF1D606504007030B5 /* Build configuration list for PBXProject "KWCodeLibrary" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 8F832DFB1D606504007030B5;
+			productRefGroup = 8F832E041D606504007030B5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F832E021D606504007030B5 /* KWCodeLibrary */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F832E011D606504007030B5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F832E171D6066A3007030B5 /* Info.plist in Resources */,
+				8F1346671D621DAD0003F196 /* KWCodeLibrarySettingController.xib in Resources */,
+				8F832E081D606504007030B5 /* KWCodeLibrary.xcscheme in Resources */,
+				8F13466F1D6860120003F196 /* KWCodeLibraryEditCodeController.xib in Resources */,
+				8F1346761D6A23F20003F196 /* KWDefaultCodeLib.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F832E001D606504007030B5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F1346581D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m in Sources */,
+				8F1345CE1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m in Sources */,
+				8F832E301D607133007030B5 /* KWCodeLibrary.m in Sources */,
+				8F13465B1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m in Sources */,
+				8F832E201D60674B007030B5 /* MethodSwizzle.m in Sources */,
+				8F1346621D618D160003F196 /* KWCodeManager.m in Sources */,
+				8F13466E1D6860120003F196 /* KWCodeLibraryEditCodeController.m in Sources */,
+				8F13465F1D618CE90003F196 /* KWCodeModel.m in Sources */,
+				8F1346661D621DAD0003F196 /* KWCodeLibrarySettingController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8F832E0D1D606504007030B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8F832E0E1D606504007030B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8F832E101D606504007030B5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KWCodeLibrary/FrameWorks",
+				);
+				INFOPLIST_FILE = KWCodeLibrary/Main/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mogujie.KWCodeLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Debug;
+		};
+		8F832E111D606504007030B5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = "$(HOME)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/KWCodeLibrary/FrameWorks",
+				);
+				INFOPLIST_FILE = KWCodeLibrary/Main/Info.plist;
+				INSTALL_PATH = "/Library/Application Support/Developer/Shared/Xcode/Plug-ins";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mogujie.KWCodeLibrary;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xcplugin;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F832DFF1D606504007030B5 /* Build configuration list for PBXProject "KWCodeLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F832E0D1D606504007030B5 /* Debug */,
+				8F832E0E1D606504007030B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F832E0F1D606504007030B5 /* Build configuration list for PBXNativeTarget "KWCodeLibrary" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F832E101D606504007030B5 /* Debug */,
+				8F832E111D606504007030B5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F832DFC1D606504007030B5 /* Project object */;
+}
