@@ -11,22 +11,32 @@
 		8F1345BF1D607F0D0003F196 /* DVTKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1345BB1D607F0D0003F196 /* DVTKit.framework */; };
 		8F1345C01D607F0D0003F196 /* IDEFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1345BC1D607F0D0003F196 /* IDEFoundation.framework */; };
 		8F1345C11D607F0D0003F196 /* IDEKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F1345BD1D607F0D0003F196 /* IDEKit.framework */; };
-		8F1345CE1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1345CD1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m */; };
-		8F1346581D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346571D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */; };
-		8F13465B1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13465A1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m */; };
 		8F13465F1D618CE90003F196 /* KWCodeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13465E1D618CE90003F196 /* KWCodeModel.m */; };
-		8F1346621D618D160003F196 /* KWCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346611D618D160003F196 /* KWCodeManager.m */; };
-		8F1346661D621DAD0003F196 /* KWCodeLibrarySettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346641D621DAD0003F196 /* KWCodeLibrarySettingController.m */; };
-		8F1346671D621DAD0003F196 /* KWCodeLibrarySettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1346651D621DAD0003F196 /* KWCodeLibrarySettingController.xib */; };
-		8F13466E1D6860120003F196 /* KWCodeLibraryEditCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13466C1D6860120003F196 /* KWCodeLibraryEditCodeController.m */; };
-		8F13466F1D6860120003F196 /* KWCodeLibraryEditCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F13466D1D6860120003F196 /* KWCodeLibraryEditCodeController.xib */; };
-		8F1346761D6A23F20003F196 /* KWDefaultCodeLib.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F1346751D6A23F20003F196 /* KWDefaultCodeLib.plist */; };
+		8F1346951D6E97940003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346941D6E97940003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */; };
+		8F1346981D6E97B40003F196 /* IDEWorkspace+KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346971D6E97B40003F196 /* IDEWorkspace+KWCodeLibrary.m */; };
+		8F13469C1D6E9E7F0003F196 /* KWCodeManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13469B1D6E9E7F0003F196 /* KWCodeManager.m */; };
+		8F13469F1D6E9E8B0003F196 /* KWCodeLibraryIndexCompletionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F13469E1D6E9E8B0003F196 /* KWCodeLibraryIndexCompletionItem.m */; };
+		8F1346A11D6E9EC40003F196 /* add_page_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 8F1346A01D6E9EC40003F196 /* add_page_icon.png */; };
+		8F1346A61D6E9F050003F196 /* KWCodeLibraryTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346A51D6E9F050003F196 /* KWCodeLibraryTextView.m */; };
+		8F1346AA1D6E9F1F0003F196 /* KWCodeCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346A81D6E9F1F0003F196 /* KWCodeCellView.m */; };
+		8F1346AB1D6E9F1F0003F196 /* KWCodeCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1346A91D6E9F1F0003F196 /* KWCodeCellView.xib */; };
+		8F1346AE1D6E9F340003F196 /* KWCodeLibraryDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346AD1D6E9F340003F196 /* KWCodeLibraryDownloader.m */; };
+		8F1346B51D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346B01D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.m */; };
+		8F1346B61D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1346B11D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.xib */; };
+		8F1346B71D6E9F4F0003F196 /* KWCodeLibrarySettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346B31D6E9F4F0003F196 /* KWCodeLibrarySettingController.m */; };
+		8F1346B81D6E9F4F0003F196 /* KWCodeLibrarySettingController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F1346B41D6E9F4F0003F196 /* KWCodeLibrarySettingController.xib */; };
+		8F1346BB1D6EA0160003F196 /* NSAlert+KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346BA1D6EA0160003F196 /* NSAlert+KWCodeLibrary.m */; };
+		8F1346BE1D6EA78C0003F196 /* KWXcodeCodeSnippetHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F1346BD1D6EA78C0003F196 /* KWXcodeCodeSnippetHandler.m */; };
 		8F832E081D606504007030B5 /* KWCodeLibrary.xcscheme in Resources */ = {isa = PBXBuildFile; fileRef = 8F832E071D606504007030B5 /* KWCodeLibrary.xcscheme */; };
 		8F832E171D6066A3007030B5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8F832E131D6066A3007030B5 /* Info.plist */; };
 		8F832E201D60674B007030B5 /* MethodSwizzle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F832E1F1D60674B007030B5 /* MethodSwizzle.m */; };
 		8F832E301D607133007030B5 /* KWCodeLibrary.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F832E2E1D607133007030B5 /* KWCodeLibrary.m */; };
 		8F948C151D607B0800B39E33 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F948C141D607B0800B39E33 /* Foundation.framework */; };
 		8F948C171D607B0E00B39E33 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F948C161D607B0E00B39E33 /* AppKit.framework */; };
+		8FCBAB631D6EDF4C00FDD1A1 /* KWProgressAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCBAB621D6EDF4C00FDD1A1 /* KWProgressAlert.m */; };
+		8FCBAB661D6EE22000FDD1A1 /* KWProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCBAB651D6EE22000FDD1A1 /* KWProgressView.m */; };
+		8FCBAB8F1D70300E00FDD1A1 /* KWCodeItemManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FCBAB8E1D70300E00FDD1A1 /* KWCodeItemManager.m */; };
+		8FFCA9841D6EC2EF00FAF5FD /* KWCodeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FFCA9831D6EC2EF00FAF5FD /* KWCodeFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +44,6 @@
 		8F1345BB1D607F0D0003F196 /* DVTKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DVTKit.framework; path = KWCodeLibrary/FrameWorks/DVTKit.framework; sourceTree = "<group>"; };
 		8F1345BC1D607F0D0003F196 /* IDEFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEFoundation.framework; path = KWCodeLibrary/FrameWorks/IDEFoundation.framework; sourceTree = "<group>"; };
 		8F1345BD1D607F0D0003F196 /* IDEKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IDEKit.framework; path = KWCodeLibrary/FrameWorks/IDEKit.framework; sourceTree = "<group>"; };
-		8F1345CC1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibraryIndexCompletionItem.h; sourceTree = "<group>"; };
-		8F1345CD1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibraryIndexCompletionItem.m; sourceTree = "<group>"; };
 		8F1345DB1D60BD410003F196 /* _IDENavigatorOutlineViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _IDENavigatorOutlineViewDataSource.h; sourceTree = "<group>"; };
 		8F1345DC1D60BD410003F196 /* DBGProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGProcess.h; sourceTree = "<group>"; };
 		8F1345DD1D60BD410003F196 /* DBGProcessNavigableItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBGProcessNavigableItem.h; sourceTree = "<group>"; };
@@ -159,21 +167,34 @@
 		8F1346531D60BD410003F196 /* XCBuildConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCBuildConfiguration.h; sourceTree = "<group>"; };
 		8F1346541D60BD410003F196 /* XCConfigurationList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCConfigurationList.h; sourceTree = "<group>"; };
 		8F1346551D60BD410003F196 /* XCEditFileEditor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XCEditFileEditor.h; sourceTree = "<group>"; };
-		8F1346561D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEIndexCompletionStrategy+KWCodeLibrary.h"; sourceTree = "<group>"; };
-		8F1346571D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEIndexCompletionStrategy+KWCodeLibrary.m"; sourceTree = "<group>"; };
-		8F1346591D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEWorkspace+KWCodeLibrary.h"; sourceTree = "<group>"; };
-		8F13465A1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEWorkspace+KWCodeLibrary.m"; sourceTree = "<group>"; };
 		8F13465D1D618CE90003F196 /* KWCodeModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeModel.h; sourceTree = "<group>"; };
 		8F13465E1D618CE90003F196 /* KWCodeModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeModel.m; sourceTree = "<group>"; };
-		8F1346601D618D160003F196 /* KWCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeManager.h; sourceTree = "<group>"; };
-		8F1346611D618D160003F196 /* KWCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeManager.m; sourceTree = "<group>"; };
-		8F1346631D621DAD0003F196 /* KWCodeLibrarySettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibrarySettingController.h; sourceTree = "<group>"; };
-		8F1346641D621DAD0003F196 /* KWCodeLibrarySettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibrarySettingController.m; sourceTree = "<group>"; };
-		8F1346651D621DAD0003F196 /* KWCodeLibrarySettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KWCodeLibrarySettingController.xib; sourceTree = "<group>"; };
-		8F13466B1D6860120003F196 /* KWCodeLibraryEditCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibraryEditCodeController.h; sourceTree = "<group>"; };
-		8F13466C1D6860120003F196 /* KWCodeLibraryEditCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibraryEditCodeController.m; sourceTree = "<group>"; };
-		8F13466D1D6860120003F196 /* KWCodeLibraryEditCodeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KWCodeLibraryEditCodeController.xib; sourceTree = "<group>"; };
-		8F1346751D6A23F20003F196 /* KWDefaultCodeLib.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = KWDefaultCodeLib.plist; sourceTree = "<group>"; };
+		8F1346931D6E97940003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEIndexCompletionStrategy+KWCodeLibrary.h"; sourceTree = "<group>"; };
+		8F1346941D6E97940003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEIndexCompletionStrategy+KWCodeLibrary.m"; sourceTree = "<group>"; };
+		8F1346961D6E97B40003F196 /* IDEWorkspace+KWCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IDEWorkspace+KWCodeLibrary.h"; sourceTree = "<group>"; };
+		8F1346971D6E97B40003F196 /* IDEWorkspace+KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "IDEWorkspace+KWCodeLibrary.m"; sourceTree = "<group>"; };
+		8F13469A1D6E9E7F0003F196 /* KWCodeManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeManager.h; sourceTree = "<group>"; };
+		8F13469B1D6E9E7F0003F196 /* KWCodeManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeManager.m; sourceTree = "<group>"; };
+		8F13469D1D6E9E8B0003F196 /* KWCodeLibraryIndexCompletionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibraryIndexCompletionItem.h; sourceTree = "<group>"; };
+		8F13469E1D6E9E8B0003F196 /* KWCodeLibraryIndexCompletionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibraryIndexCompletionItem.m; sourceTree = "<group>"; };
+		8F1346A01D6E9EC40003F196 /* add_page_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = add_page_icon.png; sourceTree = "<group>"; };
+		8F1346A41D6E9F050003F196 /* KWCodeLibraryTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibraryTextView.h; sourceTree = "<group>"; };
+		8F1346A51D6E9F050003F196 /* KWCodeLibraryTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibraryTextView.m; sourceTree = "<group>"; };
+		8F1346A71D6E9F1F0003F196 /* KWCodeCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeCellView.h; sourceTree = "<group>"; };
+		8F1346A81D6E9F1F0003F196 /* KWCodeCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeCellView.m; sourceTree = "<group>"; };
+		8F1346A91D6E9F1F0003F196 /* KWCodeCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KWCodeCellView.xib; sourceTree = "<group>"; };
+		8F1346AC1D6E9F340003F196 /* KWCodeLibraryDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibraryDownloader.h; sourceTree = "<group>"; };
+		8F1346AD1D6E9F340003F196 /* KWCodeLibraryDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibraryDownloader.m; sourceTree = "<group>"; };
+		8F1346AF1D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibraryEditCodeController.h; sourceTree = "<group>"; };
+		8F1346B01D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibraryEditCodeController.m; sourceTree = "<group>"; };
+		8F1346B11D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KWCodeLibraryEditCodeController.xib; sourceTree = "<group>"; };
+		8F1346B21D6E9F4F0003F196 /* KWCodeLibrarySettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeLibrarySettingController.h; sourceTree = "<group>"; };
+		8F1346B31D6E9F4F0003F196 /* KWCodeLibrarySettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibrarySettingController.m; sourceTree = "<group>"; };
+		8F1346B41D6E9F4F0003F196 /* KWCodeLibrarySettingController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = KWCodeLibrarySettingController.xib; sourceTree = "<group>"; };
+		8F1346B91D6EA0160003F196 /* NSAlert+KWCodeLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAlert+KWCodeLibrary.h"; sourceTree = "<group>"; };
+		8F1346BA1D6EA0160003F196 /* NSAlert+KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAlert+KWCodeLibrary.m"; sourceTree = "<group>"; };
+		8F1346BC1D6EA78C0003F196 /* KWXcodeCodeSnippetHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWXcodeCodeSnippetHandler.h; sourceTree = "<group>"; };
+		8F1346BD1D6EA78C0003F196 /* KWXcodeCodeSnippetHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWXcodeCodeSnippetHandler.m; sourceTree = "<group>"; };
 		8F832E031D606504007030B5 /* KWCodeLibrary.xcplugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KWCodeLibrary.xcplugin; sourceTree = BUILT_PRODUCTS_DIR; };
 		8F832E071D606504007030B5 /* KWCodeLibrary.xcscheme */ = {isa = PBXFileReference; lastKnownFileType = text.xml; name = KWCodeLibrary.xcscheme; path = KWCodeLibrary.xcodeproj/xcshareddata/xcschemes/KWCodeLibrary.xcscheme; sourceTree = SOURCE_ROOT; };
 		8F832E131D6066A3007030B5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,6 +204,14 @@
 		8F832E2E1D607133007030B5 /* KWCodeLibrary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeLibrary.m; sourceTree = "<group>"; };
 		8F948C141D607B0800B39E33 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8F948C161D607B0E00B39E33 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		8FCBAB611D6EDF4C00FDD1A1 /* KWProgressAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWProgressAlert.h; sourceTree = "<group>"; };
+		8FCBAB621D6EDF4C00FDD1A1 /* KWProgressAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWProgressAlert.m; sourceTree = "<group>"; };
+		8FCBAB641D6EE22000FDD1A1 /* KWProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWProgressView.h; sourceTree = "<group>"; };
+		8FCBAB651D6EE22000FDD1A1 /* KWProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWProgressView.m; sourceTree = "<group>"; };
+		8FCBAB8D1D70300E00FDD1A1 /* KWCodeItemManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeItemManager.h; sourceTree = "<group>"; };
+		8FCBAB8E1D70300E00FDD1A1 /* KWCodeItemManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeItemManager.m; sourceTree = "<group>"; };
+		8FFCA9821D6EC2EF00FAF5FD /* KWCodeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWCodeFilter.h; sourceTree = "<group>"; };
+		8FFCA9831D6EC2EF00FAF5FD /* KWCodeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWCodeFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -337,10 +366,77 @@
 			children = (
 				8F13465D1D618CE90003F196 /* KWCodeModel.h */,
 				8F13465E1D618CE90003F196 /* KWCodeModel.m */,
-				8F1346601D618D160003F196 /* KWCodeManager.h */,
-				8F1346611D618D160003F196 /* KWCodeManager.m */,
+				8F13469D1D6E9E8B0003F196 /* KWCodeLibraryIndexCompletionItem.h */,
+				8F13469E1D6E9E8B0003F196 /* KWCodeLibraryIndexCompletionItem.m */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		8F13468F1D6D9FEF0003F196 /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				8F1346A01D6E9EC40003F196 /* add_page_icon.png */,
+			);
+			path = Icons;
+			sourceTree = "<group>";
+		};
+		8F1346921D6E97730003F196 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				8F1346931D6E97940003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.h */,
+				8F1346941D6E97940003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */,
+				8F1346961D6E97B40003F196 /* IDEWorkspace+KWCodeLibrary.h */,
+				8F1346971D6E97B40003F196 /* IDEWorkspace+KWCodeLibrary.m */,
+				8F1346B91D6EA0160003F196 /* NSAlert+KWCodeLibrary.h */,
+				8F1346BA1D6EA0160003F196 /* NSAlert+KWCodeLibrary.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		8F1346991D6E9E600003F196 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				8F1346AC1D6E9F340003F196 /* KWCodeLibraryDownloader.h */,
+				8F1346AD1D6E9F340003F196 /* KWCodeLibraryDownloader.m */,
+				8F13469A1D6E9E7F0003F196 /* KWCodeManager.h */,
+				8F13469B1D6E9E7F0003F196 /* KWCodeManager.m */,
+				8F1346BC1D6EA78C0003F196 /* KWXcodeCodeSnippetHandler.h */,
+				8F1346BD1D6EA78C0003F196 /* KWXcodeCodeSnippetHandler.m */,
+				8FFCA9821D6EC2EF00FAF5FD /* KWCodeFilter.h */,
+				8FFCA9831D6EC2EF00FAF5FD /* KWCodeFilter.m */,
+				8FCBAB8D1D70300E00FDD1A1 /* KWCodeItemManager.h */,
+				8FCBAB8E1D70300E00FDD1A1 /* KWCodeItemManager.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		8F1346A21D6E9EEE0003F196 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F1346AF1D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.h */,
+				8F1346B01D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.m */,
+				8F1346B11D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.xib */,
+				8F1346B21D6E9F4F0003F196 /* KWCodeLibrarySettingController.h */,
+				8F1346B31D6E9F4F0003F196 /* KWCodeLibrarySettingController.m */,
+				8F1346B41D6E9F4F0003F196 /* KWCodeLibrarySettingController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F1346A31D6E9EF60003F196 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F1346A41D6E9F050003F196 /* KWCodeLibraryTextView.h */,
+				8F1346A51D6E9F050003F196 /* KWCodeLibraryTextView.m */,
+				8F1346A71D6E9F1F0003F196 /* KWCodeCellView.h */,
+				8F1346A81D6E9F1F0003F196 /* KWCodeCellView.m */,
+				8F1346A91D6E9F1F0003F196 /* KWCodeCellView.xib */,
+				8FCBAB611D6EDF4C00FDD1A1 /* KWProgressAlert.h */,
+				8FCBAB621D6EDF4C00FDD1A1 /* KWProgressAlert.m */,
+				8FCBAB641D6EE22000FDD1A1 /* KWProgressView.h */,
+				8FCBAB651D6EE22000FDD1A1 /* KWProgressView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		8F832DFB1D606504007030B5 = {
@@ -363,9 +459,12 @@
 		8F832E051D606504007030B5 /* KWCodeLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				8F1346A31D6E9EF60003F196 /* View */,
+				8F1346A21D6E9EEE0003F196 /* Controller */,
+				8F1346991D6E9E600003F196 /* Helper */,
+				8F1346921D6E97730003F196 /* Category */,
+				8F13468F1D6D9FEF0003F196 /* Icons */,
 				8F13465C1D618C930003F196 /* Model */,
-				8F832E191D6066AA007030B5 /* Action */,
-				8F832E1A1D6066AA007030B5 /* Setting */,
 				8F832E121D6066A3007030B5 /* Main */,
 				8F832E061D606504007030B5 /* Supporting Files */,
 			);
@@ -376,7 +475,6 @@
 			isa = PBXGroup;
 			children = (
 				8F832E071D606504007030B5 /* KWCodeLibrary.xcscheme */,
-				8F1346751D6A23F20003F196 /* KWDefaultCodeLib.plist */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -392,32 +490,6 @@
 				8F832E2E1D607133007030B5 /* KWCodeLibrary.m */,
 			);
 			path = Main;
-			sourceTree = "<group>";
-		};
-		8F832E191D6066AA007030B5 /* Action */ = {
-			isa = PBXGroup;
-			children = (
-				8F1346561D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.h */,
-				8F1346571D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m */,
-				8F1346591D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.h */,
-				8F13465A1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m */,
-				8F1345CC1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.h */,
-				8F1345CD1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m */,
-			);
-			path = Action;
-			sourceTree = "<group>";
-		};
-		8F832E1A1D6066AA007030B5 /* Setting */ = {
-			isa = PBXGroup;
-			children = (
-				8F1346631D621DAD0003F196 /* KWCodeLibrarySettingController.h */,
-				8F1346641D621DAD0003F196 /* KWCodeLibrarySettingController.m */,
-				8F1346651D621DAD0003F196 /* KWCodeLibrarySettingController.xib */,
-				8F13466B1D6860120003F196 /* KWCodeLibraryEditCodeController.h */,
-				8F13466C1D6860120003F196 /* KWCodeLibraryEditCodeController.m */,
-				8F13466D1D6860120003F196 /* KWCodeLibraryEditCodeController.xib */,
-			);
-			path = Setting;
 			sourceTree = "<group>";
 		};
 		8F948C0F1D607A9700B39E33 /* FrameWorks */ = {
@@ -490,10 +562,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F832E171D6066A3007030B5 /* Info.plist in Resources */,
-				8F1346671D621DAD0003F196 /* KWCodeLibrarySettingController.xib in Resources */,
 				8F832E081D606504007030B5 /* KWCodeLibrary.xcscheme in Resources */,
-				8F13466F1D6860120003F196 /* KWCodeLibraryEditCodeController.xib in Resources */,
-				8F1346761D6A23F20003F196 /* KWDefaultCodeLib.plist in Resources */,
+				8F1346B61D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.xib in Resources */,
+				8F1346B81D6E9F4F0003F196 /* KWCodeLibrarySettingController.xib in Resources */,
+				8F1346AB1D6E9F1F0003F196 /* KWCodeCellView.xib in Resources */,
+				8F1346A11D6E9EC40003F196 /* add_page_icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,15 +577,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F1346581D60BE360003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m in Sources */,
-				8F1345CE1D608B530003F196 /* KWCodeLibraryIndexCompletionItem.m in Sources */,
 				8F832E301D607133007030B5 /* KWCodeLibrary.m in Sources */,
-				8F13465B1D60BF5B0003F196 /* IDEWorkspace+KWCodeLibrary.m in Sources */,
 				8F832E201D60674B007030B5 /* MethodSwizzle.m in Sources */,
-				8F1346621D618D160003F196 /* KWCodeManager.m in Sources */,
-				8F13466E1D6860120003F196 /* KWCodeLibraryEditCodeController.m in Sources */,
+				8F1346B71D6E9F4F0003F196 /* KWCodeLibrarySettingController.m in Sources */,
+				8FCBAB661D6EE22000FDD1A1 /* KWProgressView.m in Sources */,
+				8F1346AE1D6E9F340003F196 /* KWCodeLibraryDownloader.m in Sources */,
+				8F13469F1D6E9E8B0003F196 /* KWCodeLibraryIndexCompletionItem.m in Sources */,
+				8F1346BE1D6EA78C0003F196 /* KWXcodeCodeSnippetHandler.m in Sources */,
+				8FCBAB8F1D70300E00FDD1A1 /* KWCodeItemManager.m in Sources */,
+				8F1346951D6E97940003F196 /* IDEIndexCompletionStrategy+KWCodeLibrary.m in Sources */,
+				8F1346BB1D6EA0160003F196 /* NSAlert+KWCodeLibrary.m in Sources */,
+				8FFCA9841D6EC2EF00FAF5FD /* KWCodeFilter.m in Sources */,
 				8F13465F1D618CE90003F196 /* KWCodeModel.m in Sources */,
-				8F1346661D621DAD0003F196 /* KWCodeLibrarySettingController.m in Sources */,
+				8F1346A61D6E9F050003F196 /* KWCodeLibraryTextView.m in Sources */,
+				8FCBAB631D6EDF4C00FDD1A1 /* KWProgressAlert.m in Sources */,
+				8F13469C1D6E9E7F0003F196 /* KWCodeManager.m in Sources */,
+				8F1346AA1D6E9F1F0003F196 /* KWCodeCellView.m in Sources */,
+				8F1346B51D6E9F4F0003F196 /* KWCodeLibraryEditCodeController.m in Sources */,
+				8F1346981D6E97B40003F196 /* IDEWorkspace+KWCodeLibrary.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

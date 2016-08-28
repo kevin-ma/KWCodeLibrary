@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#define KWNotFound -1
+
 @interface KWCodeManager : NSObject
 
 + (instancetype)defaultManager;
@@ -30,9 +32,9 @@
 
 - (void)exportWithFileUrl:(NSURL *)url;
 
-- (void)importFromCodeSnippetWithComplete:(void(^)(NSString *path,NSArray *files))complete;
+- (void)importFromCodeSnippetWithComplete:(void(^)())complete;
 
-- (NSInteger)indexForModelWithShortcut:(NSString *)shortcut;
+- (NSInteger)indexForModelWithShortcut:(NSString *)shortcut andTitle:(NSString *)title;
 
 @property (assign,getter=isCodeEnable) BOOL codeEnable;
 

@@ -9,6 +9,7 @@
             <connections>
                 <outlet property="continueEditButton" destination="hqe-eS-ebD" id="ngQ-yy-VaT"/>
                 <outlet property="enableButton" destination="NHb-Un-9pp" id="OdU-eg-BVy"/>
+                <outlet property="importSnippetItem" destination="ikD-yi-z1i" id="Kdf-Hp-0aH"/>
                 <outlet property="searchField" destination="mbQ-Eo-yJI" id="ips-kF-Yd5"/>
                 <outlet property="tableView" destination="mbH-yj-Cgi" id="6P8-0p-4iZ"/>
                 <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
@@ -66,9 +67,9 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="60" id="6ff-fg-2ey"/>
                         </constraints>
-                        <buttonCell key="cell" type="smallSquare" title="Export" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="S5x-eK-w9k">
+                        <buttonCell key="cell" type="smallSquare" title="导出" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="S5x-eK-w9k">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="exportAction:" target="-2" id="rcg-Vj-v8d"/>
@@ -80,8 +81,8 @@
                             <constraint firstAttribute="width" constant="204" id="Y14-5T-VVd"/>
                             <constraint firstAttribute="height" constant="22" id="Y9s-cd-xEv"/>
                         </constraints>
-                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="search code key" usesSingleLineMode="YES" bezelStyle="round" id="yF3-X7-Ddf">
-                            <font key="font" metaFont="system"/>
+                        <searchFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" borderStyle="bezel" placeholderString="搜索" usesSingleLineMode="YES" bezelStyle="round" id="yF3-X7-Ddf">
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </searchFieldCell>
@@ -90,14 +91,14 @@
                         </connections>
                     </searchField>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="H5A-iL-2O8">
-                        <rect key="frame" x="238" y="395" width="75" height="33"/>
+                        <rect key="frame" x="238" y="395" width="82" height="33"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="63" id="alt-Is-HX0"/>
+                            <constraint firstAttribute="width" constant="70" id="alt-Is-HX0"/>
                             <constraint firstAttribute="height" constant="22" id="o4g-iG-32G"/>
                         </constraints>
-                        <buttonCell key="cell" type="push" title="Clear" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M5Q-ur-3Rx">
+                        <buttonCell key="cell" type="push" title="清空搜索" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="M5Q-ur-3Rx">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="searchAction:" target="-2" id="Xyd-vw-lKt"/>
@@ -105,52 +106,37 @@
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="lKy-m5-so5">
                         <rect key="frame" x="831" y="14" width="60" height="26"/>
-                        <buttonCell key="cell" type="smallSquare" title="Import" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="rBP-ZR-4GZ">
+                        <buttonCell key="cell" type="smallSquare" title="导入" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="rBP-ZR-4GZ">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="importAction:" target="-2" id="R97-ml-W3V"/>
                         </connections>
                     </button>
-                    <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ttM-fe-4Y3">
-                        <rect key="frame" x="633" y="14" width="183" height="26"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="24" id="VXU-s4-PFN"/>
-                            <constraint firstAttribute="width" constant="183" id="hLf-ll-U6j"/>
-                        </constraints>
-                        <buttonCell key="cell" type="smallSquare" title="Import from Code Snippet" bezelStyle="smallSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="ip2-nc-Blx">
-                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
-                        </buttonCell>
-                        <connections>
-                            <action selector="importFromSnippetAction:" target="-2" id="Rof-po-s2c"/>
-                        </connections>
-                    </button>
                     <button translatesAutoresizingMaskIntoConstraints="NO" id="NHb-Un-9pp">
-                        <rect key="frame" x="768" y="405" width="74" height="18"/>
+                        <rect key="frame" x="784" y="405" width="54" height="18"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="14" id="CgC-4f-CMl"/>
-                            <constraint firstAttribute="width" constant="70" id="sGM-Jt-ZMz"/>
+                            <constraint firstAttribute="width" constant="50" id="sGM-Jt-ZMz"/>
                         </constraints>
-                        <buttonCell key="cell" type="check" title="Enabled" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="LHx-ly-TCF">
+                        <buttonCell key="cell" type="check" title="启用" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="LHx-ly-TCF">
                             <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="enableAction:" target="-2" id="a8z-mC-J8Z"/>
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="6kA-jo-w3B">
-                        <rect key="frame" x="849" y="396" width="123" height="32"/>
+                        <rect key="frame" x="845" y="396" width="62" height="32"/>
                         <constraints>
-                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="111" id="SCf-Li-dYa"/>
-                            <constraint firstAttribute="width" constant="111" id="mwr-Ph-o3m"/>
+                            <constraint firstAttribute="width" constant="50" id="SCf-Li-dYa"/>
                             <constraint firstAttribute="height" constant="21" id="rWt-n4-Jfe"/>
                         </constraints>
-                        <buttonCell key="cell" type="push" title="Reset Default" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rLI-M9-r1L">
+                        <buttonCell key="cell" type="push" title="重置" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="rLI-M9-r1L">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="resetAction:" target="-2" id="ZUw-CQ-yWf"/>
@@ -161,9 +147,9 @@
                         <constraints>
                             <constraint firstAttribute="width" constant="40" id="P4i-cG-6Ym"/>
                         </constraints>
-                        <buttonCell key="cell" type="square" title="Edit" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="r4S-pe-d9C">
+                        <buttonCell key="cell" type="square" title="编辑" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="r4S-pe-d9C">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="editAction:" target="-2" id="IB0-TA-0ef"/>
@@ -175,9 +161,9 @@
                             <constraint firstAttribute="width" constant="98" id="e6s-rQ-Vce"/>
                             <constraint firstAttribute="height" constant="25" id="geD-Pa-GvM"/>
                         </constraints>
-                        <buttonCell key="cell" type="square" title="Continue Edit" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="q9P-1p-k1u">
+                        <buttonCell key="cell" type="square" title="继续编辑" bezelStyle="shadowlessSquare" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" id="q9P-1p-k1u">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" size="13" name=".PingFangSC-Regular"/>
                         </buttonCell>
                         <connections>
                             <action selector="continueAction:" target="-2" id="EwE-BB-t2b"/>
@@ -197,13 +183,13 @@
                                     <tableViewGridLines key="gridStyleMask" vertical="YES" dashed="YES"/>
                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                     <tableColumns>
-                                        <tableColumn identifier="" width="29" minWidth="10" maxWidth="3.4028234663852886e+38" id="CdV-D4-r3a">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="No.">
+                                        <tableColumn identifier="" width="30" minWidth="10" maxWidth="3.4028234663852886e+38" id="CdV-D4-r3a">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="序号">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" title="Text Cell" id="Uki-TJ-IhA">
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="Uki-TJ-IhA">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -211,12 +197,12 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn width="108" minWidth="50" maxWidth="1000" id="DyZ-9K-YnQ">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="title">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="标题">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
-                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="center" title="Text Cell" id="qGc-DE-c8W">
+                                            <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="qGc-DE-c8W">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -224,7 +210,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="" width="118.3125" minWidth="75" maxWidth="1000" id="FZf-hI-zlh">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="summary">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="简述">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -237,7 +223,7 @@
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
                                         <tableColumn identifier="" width="62" minWidth="50" maxWidth="5000" id="NI0-QS-nqk">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="shortcut">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="快捷键">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -249,8 +235,8 @@
                                             </textFieldCell>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="" width="562.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="YR8-Nf-6H3">
-                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="snippet">
+                                        <tableColumn identifier="" width="610.5" minWidth="10" maxWidth="3.4028234663852886e+38" id="YR8-Nf-6H3">
+                                            <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="center" title="代码段">
                                                 <font key="font" metaFont="smallSystem"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -284,18 +270,57 @@
                             <autoresizingMask key="autoresizingMask"/>
                         </tableHeaderView>
                     </scrollView>
+                    <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="s9L-hE-J28">
+                        <rect key="frame" x="916" y="400" width="50" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="W7M-8f-5wH"/>
+                            <constraint firstAttribute="height" constant="22" id="aoq-OQ-rYO"/>
+                        </constraints>
+                        <popUpButtonCell key="cell" type="roundTextured" alternateTitle="导入" bezelStyle="texturedRounded" imagePosition="left" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" pullsDown="YES" autoenablesItems="NO" selectedItem="Kko-Zw-6dd" id="PGj-Vc-KwV">
+                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                            <font key="font" metaFont="menu"/>
+                            <menu key="menu" autoenablesItems="NO" id="bfU-hO-VSC">
+                                <items>
+                                    <menuItem state="on" image="NSActionTemplate" hidden="YES" id="hhM-1y-050"/>
+                                    <menuItem title="更新导入" id="Kko-Zw-6dd">
+                                        <connections>
+                                            <action selector="updateFromRemote:" target="-2" id="42L-yy-CpK"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="7Sj-if-qHu"/>
+                                    <menuItem title="导入默认远端" id="lsm-52-1De">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="loadFromDefault:" target="-2" id="y5W-Re-wab"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem title="导入自定义远端" id="RSY-vr-dwJ">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="loadFromCustom:" target="-2" id="v35-NI-z3T"/>
+                                        </connections>
+                                    </menuItem>
+                                    <menuItem isSeparatorItem="YES" id="8wz-Kp-khz"/>
+                                    <menuItem title="从Xode Code Snippet导入" enabled="NO" id="ikD-yi-z1i">
+                                        <modifierMask key="keyEquivalentModifierMask"/>
+                                        <connections>
+                                            <action selector="importFromSnippetAction:" target="-2" id="g2W-3H-XgS"/>
+                                        </connections>
+                                    </menuItem>
+                                </items>
+                            </menu>
+                        </popUpButtonCell>
+                    </popUpButton>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="trailing" secondItem="6kA-jo-w3B" secondAttribute="trailing" constant="20" id="0fE-GJ-EXI"/>
                     <constraint firstItem="H5A-iL-2O8" firstAttribute="leading" secondItem="mbQ-Eo-yJI" secondAttribute="trailing" constant="20" id="0iw-f6-YgJ"/>
                     <constraint firstItem="6kA-jo-w3B" firstAttribute="leading" secondItem="NHb-Un-9pp" secondAttribute="trailing" constant="15" id="1Rc-sF-mFa"/>
-                    <constraint firstItem="ttM-fe-4Y3" firstAttribute="baseline" secondItem="lKy-m5-so5" secondAttribute="baseline" id="2pL-rQ-fO4"/>
                     <constraint firstItem="Gmw-Ie-rfN" firstAttribute="top" secondItem="BEv-hg-617" secondAttribute="bottom" constant="15" id="4L4-oP-Df7"/>
                     <constraint firstItem="ais-Ft-jbq" firstAttribute="height" secondItem="Gmw-Ie-rfN" secondAttribute="height" id="54x-G9-9Jr"/>
                     <constraint firstItem="hqe-eS-ebD" firstAttribute="leading" secondItem="Lh2-ve-dDK" secondAttribute="trailing" constant="16" id="Ata-Q7-6yL"/>
+                    <constraint firstAttribute="trailing" secondItem="s9L-hE-J28" secondAttribute="trailing" constant="20" id="ESS-TM-QNW"/>
                     <constraint firstItem="lKy-m5-so5" firstAttribute="width" secondItem="qN7-E4-6rF" secondAttribute="width" id="FR9-io-z1C"/>
                     <constraint firstItem="Niw-fH-IXx" firstAttribute="centerX" secondItem="BEv-hg-617" secondAttribute="centerX" id="GbK-uU-rHN"/>
-                    <constraint firstItem="ttM-fe-4Y3" firstAttribute="centerY" secondItem="lKy-m5-so5" secondAttribute="centerY" id="JtE-1p-ueQ"/>
                     <constraint firstItem="BEv-hg-617" firstAttribute="top" secondItem="H5A-iL-2O8" secondAttribute="bottom" constant="15" id="KOu-ot-0NG"/>
                     <constraint firstAttribute="bottom" secondItem="Gmw-Ie-rfN" secondAttribute="bottom" constant="15" id="KZr-Oh-7Zc"/>
                     <constraint firstItem="NHb-Un-9pp" firstAttribute="centerY" secondItem="6kA-jo-w3B" secondAttribute="centerY" id="LUc-BU-ArE"/>
@@ -311,14 +336,14 @@
                     <constraint firstItem="BEv-hg-617" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="XiB-oV-Ivy"/>
                     <constraint firstItem="Lh2-ve-dDK" firstAttribute="centerY" secondItem="ais-Ft-jbq" secondAttribute="centerY" id="XvT-eR-mi7"/>
                     <constraint firstItem="Lh2-ve-dDK" firstAttribute="leading" secondItem="ais-Ft-jbq" secondAttribute="trailing" constant="15" id="Zrh-co-W17"/>
-                    <constraint firstItem="ttM-fe-4Y3" firstAttribute="baseline" secondItem="lKy-m5-so5" secondAttribute="baseline" id="bXP-vj-Lj2"/>
                     <constraint firstItem="Gmw-Ie-rfN" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="beq-7G-YeS"/>
                     <constraint firstItem="Niw-fH-IXx" firstAttribute="centerY" secondItem="BEv-hg-617" secondAttribute="centerY" id="dFG-Ya-jCM"/>
                     <constraint firstAttribute="trailing" secondItem="BEv-hg-617" secondAttribute="trailing" constant="20" id="eD8-QU-J2U"/>
                     <constraint firstItem="mbQ-Eo-yJI" firstAttribute="top" secondItem="se5-gp-TjO" secondAttribute="top" constant="15" id="eVN-MH-dBb"/>
                     <constraint firstItem="mbQ-Eo-yJI" firstAttribute="leading" secondItem="se5-gp-TjO" secondAttribute="leading" constant="20" id="fNK-gB-83s"/>
+                    <constraint firstItem="s9L-hE-J28" firstAttribute="centerY" secondItem="6kA-jo-w3B" secondAttribute="centerY" id="j4D-te-xsN"/>
                     <constraint firstItem="ais-Ft-jbq" firstAttribute="leading" secondItem="Gmw-Ie-rfN" secondAttribute="trailing" constant="15" id="lbY-mg-QOy"/>
-                    <constraint firstItem="lKy-m5-so5" firstAttribute="leading" secondItem="ttM-fe-4Y3" secondAttribute="trailing" constant="15" id="njE-is-zh3"/>
+                    <constraint firstItem="s9L-hE-J28" firstAttribute="leading" secondItem="6kA-jo-w3B" secondAttribute="trailing" constant="15" id="oic-I1-aEq"/>
                     <constraint firstAttribute="trailing" secondItem="qN7-E4-6rF" secondAttribute="trailing" constant="20" id="rKL-dB-EhV"/>
                     <constraint firstItem="qN7-E4-6rF" firstAttribute="leading" secondItem="lKy-m5-so5" secondAttribute="trailing" constant="15" id="scV-gU-poa"/>
                     <constraint firstItem="lKy-m5-so5" firstAttribute="height" secondItem="qN7-E4-6rF" secondAttribute="height" id="u0h-DL-kJN"/>
@@ -327,7 +352,10 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
             </connections>
-            <point key="canvasLocation" x="471" y="267.5"/>
+            <point key="canvasLocation" x="460" y="172.5"/>
         </window>
     </objects>
+    <resources>
+        <image name="NSActionTemplate" width="14" height="14"/>
+    </resources>
 </document>

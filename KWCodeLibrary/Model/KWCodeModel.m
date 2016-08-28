@@ -11,7 +11,7 @@
 
 @interface KWCodeModel ()
 
-@property (nonatomic, copy) NSString *showTipText;
+@property (copy) NSString *showTipText;
 
 @end
 
@@ -20,10 +20,10 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dict
 {
     if (self = [super init]) {
-        _title = dict[@"title"];
-        _shortcut = dict[@"shortcut"];
-        _summary = dict[@"summary"];
-        _snippet = dict[@"snippet"];
+        self.title = dict[@"title"] ? :@"";
+        self.shortcut = dict[@"shortcut"] ? :@"";
+        self.summary = dict[@"summary"] ? :@"";
+        self.snippet = dict[@"snippet"] ? :@"";
     }
     return self;
 }
@@ -55,10 +55,10 @@
 - (instancetype)initWithTitle:(NSString *)title shortcut:(NSString *)shortcut summary:(NSString *)summary snippet:(NSString *)snippet
 {
     if (self = [super init]) {
-        _title = title;
-        _shortcut = shortcut;
-        _summary = summary;
-        _snippet = snippet;
+        self.title = title ? :@"";
+        self.shortcut = shortcut ? :@"";
+        self.summary = summary ? :@"";
+        self.snippet = snippet ? :@"";
     }
     return self;
 }

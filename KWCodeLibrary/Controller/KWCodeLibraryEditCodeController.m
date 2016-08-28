@@ -9,10 +9,12 @@
 #import "KWCodeLibraryEditCodeController.h"
 #import <objc/runtime.h>
 #import "KWCodeManager.h"
+#import "NSAlert+KWCodeLibrary.h"
 
 @interface KWCodeLibraryEditCodeController ()
-@property (weak) IBOutlet NSTextField *keyField;
-@property (weak) IBOutlet NSTextField *tipField;
+@property (weak) IBOutlet NSTextField *titleField;
+@property (weak) IBOutlet NSTextField *summaryField;
+@property (weak) IBOutlet NSTextField *shortcutField;
 @property (unsafe_unretained) IBOutlet NSTextView *codeField;
 @property (weak) IBOutlet NSButton *overrideButton;
 @property (weak) IBOutlet NSButton *cancelButton;
@@ -50,19 +52,23 @@
     self.window.alphaValue = 1.f;
     self.overrideButton.state = _overrideMode;
     if (codeModel) {
-        self.window.title = [NSString stringWithFormat:@"Editing %@",[codeModel showTipText]];
-        self.keyField.stringValue = codeModel.shortcut;
+        self.window.title = [NSString stringWithFormat:@"正在编辑 %@",[codeModel showTipText]];
+        self.shortcutField.stringValue = codeModel.shortcut;
         NSAttributedString* attr = [[NSAttributedString alloc] initWithString:codeModel.snippet];
         [self.codeField.textStorage setAttributedString:attr];
-        self.tipField.stringValue = codeModel.summary;
+        self.summaryField.stringValue = codeModel.summary;
+        self.titleField.stringValue = codeModel.title;
         self.codeModel = codeModel;
+        self.overrideButton.hidden = YES;
     } else {
-        self.window.title = @"Adding New Item";
-        self.keyField.stringValue = @"";
+        self.window.title = @"添加新条目";
+        self.titleField.stringValue = @"";
+        self.summaryField.stringValue = @"";
         NSAttributedString* attr = [[NSAttributedString alloc] initWithString:@""];
         [self.codeField.textStorage setAttributedString:attr];
-        self.tipField.stringValue = @"";
+        self.shortcutField.stringValue = @"";
         self.codeModel = nil;
+        self.overrideButton.hidden = NO;
     }
     [self.window makeFirstResponder:self];
     [self.window makeKeyWindow];
@@ -87,27 +93,32 @@
 
 - (IBAction)finishAction:(id)sender
 {
-    if (!_keyField.stringValue.length) {
-        [self alertNotice:@"Error" info:@"the key can't be empty"];
+    if (_titleField.stringValue.length == 0) {
+        [NSAlert alertNoticeWithTitle:@"提交出错" message:@"请先填写标题再提交"];
         return;
     }
-    if (!_codeField.textStorage.string) {
-        [self alertNotice:@"Error" info:@"the code can't be empty"];
+    if (_shortcutField.stringValue.length == 0) {
+        [NSAlert alertNoticeWithTitle:@"提交出错" message:@"请先填写快捷键再提交"];
+        return;
+    }
+    if (_codeField.textStorage.string.length == 0) {
+        [NSAlert alertNoticeWithTitle:@"提交出错" message:@"请先填写代码段再提交"];
         return;
     }
     if (self.codeModel) {
-        [[[KWCodeManager defaultManager] updateModelAtIndex:[[KWCodeManager defaultManager] indexForModelWithShortcut:self.codeModel.shortcut] withTitle:_tipField.stringValue shortcut:_keyField.stringValue summary:_tipField.stringValue snippet:_codeField.textStorage.string] synchronize];
+        [[[KWCodeManager defaultManager] updateModelAtIndex:[[KWCodeManager defaultManager] indexForModelWithShortcut:self.codeModel.shortcut andTitle:self.codeModel.title] withTitle:_titleField.stringValue shortcut:_shortcutField.stringValue summary:_summaryField.stringValue snippet:_codeField.textStorage.string] synchronize];
     } else {
         // exist check
-        if ([[KWCodeManager defaultManager] indexForModelWithShortcut:_keyField.stringValue] != -1) {
+        if ([[KWCodeManager defaultManager] indexForModelWithShortcut:_shortcutField.stringValue andTitle:_titleField.stringValue] != KWNotFound) {
             if (!self.overrideMode) {
-                [self alertNotice:@"Error" info:@"you did have this key in library, if you want to override, please check the override setting"];
+                [NSAlert alertNoticeWithTitle:@"提交出错" message:@"该项已经存在，如果需要替换，请勾选“覆盖已存在”选项"];
+
                 return;
             } else {
-                [[[KWCodeManager defaultManager] updateModelAtIndex:[[KWCodeManager defaultManager] indexForModelWithShortcut:_keyField.stringValue] withTitle:_tipField.stringValue ?: @"" shortcut:_keyField.stringValue summary:_tipField.stringValue ?: @"" snippet:_codeField.textStorage.string] synchronize];
+                [[[KWCodeManager defaultManager] updateModelAtIndex:[[KWCodeManager defaultManager] indexForModelWithShortcut:_shortcutField.stringValue andTitle:_titleField.stringValue] withTitle:_titleField.stringValue ?: @"" shortcut:_shortcutField.stringValue summary:_summaryField.stringValue ?: @"" snippet:_codeField.textStorage.string] synchronize];
             }
         } else {
-            [[[KWCodeManager defaultManager] addModelWithTitle:_tipField.stringValue ?: @"" shortcut:_keyField.stringValue summary:_tipField.stringValue ?: @"" snippet:_codeField.textStorage.string] synchronize];
+            [[[KWCodeManager defaultManager] addModelWithTitle:_titleField.stringValue ?: @"" shortcut:_shortcutField.stringValue summary:_summaryField.stringValue ?: @"" snippet:_codeField.textStorage.string] synchronize];
         }
     }
     
@@ -131,15 +142,6 @@
     [self.window makeKeyWindow];
 }
 
-- (void)alertNotice:(NSString *)string info:(NSString *)info
-{
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:string];
-    if (info != nil) {
-        [alert setInformativeText:info];
-    }
-    [alert runModal];
-}
 @end
 
 @interface NSWindow ()
@@ -160,7 +162,6 @@
 - (BOOL)kw_canBecomeKeyWindow
 {
     if (self.canBeKey) {
-        NSLog(@"YES %@",self);
         return YES;
     } else {
         return [self kw_canBecomeKeyWindow];

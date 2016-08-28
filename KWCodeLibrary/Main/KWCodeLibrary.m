@@ -8,6 +8,7 @@
 
 #import "KWCodeLibrary.h"
 #import "KWCodeManager.h"
+#import "KWCodeItemManager.h"
 
 static KWCodeLibrary *sharedPlugin;
 
@@ -72,58 +73,25 @@ static KWCodeLibrary *sharedPlugin;
     NSString *name = [self.bundle objectForInfoDictionaryKey:@"CFBundleName"];
     NSString *version = [self.bundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"];
     NSString *status = [self initialize] ? @"loaded successfully" : @"failed to load";
-    NSLog(@"🔌 Plugin %@ %@ %@", name, version, status);
+    NSLog(@"❤️ Plugin %@ %@ %@", name, version, status);
 }
 
 #pragma mark - Implementation
 
 - (BOOL)initialize
 {
-    // Create menu items, initialize UI, etc.
-    // Sample Menu Item:
-//    NSMenuItem *menuItem = [[NSApp mainMenu] itemWithTitle:@"Edit"];
-//    if (menuItem) {
-//        [[menuItem submenu] addItem:[NSMenuItem separatorItem]];
-//        NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:@"Do Action" action:@selector(doMenuAction) keyEquivalent:@""];
-//        //[actionMenuItem setKeyEquivalentModifierMask:NSAlphaShiftKeyMask | NSControlKeyMask];
-//        [actionMenuItem setTarget:self];
-//        [[menuItem submenu] addItem:actionMenuItem];
-//        return YES;
-//    } else {
-//        return NO;
-//    }
-    NSMenu *mainMenu = [NSApp mainMenu];
-    NSMenuItem *pluginsMenuItem = [mainMenu itemWithTitle:@"Code Library"];
-    if (!pluginsMenuItem) {
-        pluginsMenuItem = [[NSMenuItem alloc] init];
-        pluginsMenuItem.title = @"Code Library";
-        pluginsMenuItem.submenu = [[NSMenu alloc] initWithTitle:pluginsMenuItem.title];
-        NSInteger windowIndex = [mainMenu indexOfItemWithTitle:@"Help"];
-        [mainMenu insertItem:pluginsMenuItem atIndex:windowIndex];
-    }
-    NSMenuItem *mainMenuItem1 = [[NSMenuItem alloc] initWithTitle:@"Code Manager"
-                                                          action:@selector(showEditWindow)
-                                                   keyEquivalent:@""];
+    KWCodeItemManager *manager = [[KWCodeItemManager alloc] initWithMainItemAtPath:@"Window.Code Library" beforeItemNamed:@"Devices"];
+    NSMenuItem *mainMenuItem1 = [manager addItemWithTitle:@"代码库管理" action:@selector(showEditWindow) target:self];
     [mainMenuItem1 setKeyEquivalentModifierMask: NSShiftKeyMask | NSCommandKeyMask];
-    [mainMenuItem1 setKeyEquivalent:@"X"];
+    [mainMenuItem1 setKeyEquivalent:@"7"];
     
-    [mainMenuItem1 setTarget:self];
-    [pluginsMenuItem.submenu addItem:mainMenuItem1];
-    
-    NSMenuItem *mainMenuItem2 = [[NSMenuItem alloc] initWithTitle:@"Enable"
-                                                           action:@selector(setCodeEnable:)
-                                                    keyEquivalent:@""];
-    [mainMenuItem2 setTarget:self];
-    [mainMenuItem2 setState:NSOnState];
-    [pluginsMenuItem.submenu addItem:mainMenuItem2];
+    NSMenuItem *mainMenuItem2 = [manager addItemWithTitle:@"启用" action:@selector(setCodeEnable:) target:self];
+    [mainMenuItem2 setKeyEquivalentModifierMask: NSShiftKeyMask | NSCommandKeyMask];
+    [mainMenuItem2 setKeyEquivalent:@"8"];
     self.enableCodeItem = mainMenuItem2;
     
-    NSMenuItem *mainMenuItem3 = [[NSMenuItem alloc] initWithTitle:@"Help"
-                                                           action:@selector(showHelpInfo)
-                                                    keyEquivalent:@""];
-    [mainMenuItem3 setTarget:self];
-    [pluginsMenuItem.submenu addItem:mainMenuItem3];
-    
+    [manager addItemWithTitle:@"获取帮助" action:@selector(showHelpInfo) target:self];
+    [manager addItemWithTitle:[NSString stringWithFormat:@"当前版本 %@",[self getBundleVersion]] action:nil target:nil];
     return YES;
 }
 
@@ -137,10 +105,8 @@ static KWCodeLibrary *sharedPlugin;
 {
     if (item.state == NSOnState) {
         item.state = NSOffState;
-        [self alertNotice:@"Success" info:@"turned off"];
     } else {
         item.state = NSOnState;
-        [self alertNotice:@"Success" info:@"turned on"];
     }
     [self.settingWindow setCodeEnableForDisplay:item.state];
     [KWCodeManager defaultManager].codeEnable = item.state;
@@ -161,17 +127,13 @@ static KWCodeLibrary *sharedPlugin;
 
 - (void)showHelpInfo
 {
-    
+    [[NSWorkspace sharedWorkspace] openURL:[NSURL URLWithString: @"https://github.com/kevin-ma/KWCodeLibrary"]];
 }
 
-- (void)alertNotice:(NSString *)string info:(NSString *)info
+- (NSString *)getBundleVersion
 {
-    NSAlert *alert = [[NSAlert alloc] init];
-    [alert setMessageText:string];
-    if (info != nil) {
-        [alert setInformativeText:info];
-    }
-    [alert runModal];
+    NSString *bundleVersion = [[self.bundle infoDictionary] objectForKey:@"CFBundleShortVersionString"];
+    return bundleVersion;
 }
 
 @end
