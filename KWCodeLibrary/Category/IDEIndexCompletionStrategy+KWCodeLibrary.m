@@ -29,11 +29,13 @@
 - (id)kevin_completionItemsForDocumentLocation:(id)arg1 context:(id)arg2 highlyLikelyCompletionItems:(id *)arg3 areDefinitive:(char *)arg4
 {
 //    DVTSourceTextView* sourceTextView = [arg2 objectForKey:@"DVTTextCompletionContextTextView"];
-//    DVTTextStorage *textStorage= [arg2 objectForKey:@"DVTTextCompletionContextTextStorage"];
-//    DVTTextDocumentLocation *location = (DVTTextDocumentLocation *)arg1;
+    DVTTextStorage *textStorage= [arg2 objectForKey:@"DVTTextCompletionContextTextStorage"];
+    DVTTextDocumentLocation *location = (DVTTextDocumentLocation *)arg1;
 //    IDEWorkspace *workspace = [arg2 objectForKey:@"IDETextCompletionContextWorkspaceKey"];
 //    IDEEditorDocument *document = [arg2 objectForKey:@"IDETextCompletionContextDocumentKey"];
-//    
+//
+    NSString *text = [textStorage.string substringWithRange:location.characterRange];
+    NSLog(@"value = %@",text);
     NSMutableArray *temp = [self kevin_completionItemsForDocumentLocation:arg1 context:arg2 highlyLikelyCompletionItems:arg3 areDefinitive:arg4];
     if ([KWCodeManager defaultManager].codeEnable) {
         NSArray *addList = [KWCodeManager defaultManager].allModel;
