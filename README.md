@@ -17,7 +17,9 @@ KWCodeLibrary is a plug-in for xcode to help you to manager your code snippet in
 
 ## Install
 
-now the only wat to install `KWCodeLibrary` is to clone this repo,build the project and done.
+1. search "KWCodeLibrary" in alcatraz(Package Manager),and install.
+2. "curl -fsSL https://raw.githubusercontent.com/kevin-ma/KWCodeLibrary/master/Install/install.sh | sh".
+3. clone this repo,build the project and done.
 
 
 ## Usage
