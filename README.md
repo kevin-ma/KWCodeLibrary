@@ -49,7 +49,7 @@ Finish that, you can use that in workspace like the demo gif image.
 
 @kevin, [devkevinma@gmail.com](mailto://devkevinma@gmail.com)
 
-<h1 id="chinese">Chinese</h1>
+<h1 id="chinese">中文简体</h1>
 
 
 KWCodeLibrary 是一款Xcode插件，它能代替 Xcode 自带的 Code Snippet 帮助你管理的代码段。
